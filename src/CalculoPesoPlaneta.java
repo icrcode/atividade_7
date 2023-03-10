@@ -1,79 +1,68 @@
 import java.util.Scanner;
 
-interface Planeta {
-    String getNome();
-    double getPeso(double pesoNaTerra);
-}
+abstract class PlanetaBase {
+    private String nome;
+    private double fatorGravidade;
 
-class Mercurio implements Planeta {
-    public String getNome() {
-        return "Mercúrio";
+    public PlanetaBase(String nome, double fatorGravidade) {
+        this.nome = nome;
+        this.fatorGravidade = fatorGravidade;
     }
-    public double getPeso(double pesoNaTerra) {
-        return pesoNaTerra * 0.38;
-    }
-}
 
-class Venus implements Planeta {
     public String getNome() {
-        return "Vênus";
+        return nome;
     }
+
     public double getPeso(double pesoNaTerra) {
-        return pesoNaTerra * 0.91;
+        return pesoNaTerra * fatorGravidade;
     }
 }
 
-class Terra implements Planeta {
-    public String getNome() {
-        return "Terra";
-    }
-    public double getPeso(double pesoNaTerra) {
-        return pesoNaTerra;
+class Mercurio extends PlanetaBase {
+    public Mercurio() {
+        super("Mercúrio", 0.38);
     }
 }
 
-class Marte implements Planeta {
-    public String getNome() {
-        return "Marte";
-    }
-    public double getPeso(double pesoNaTerra) {
-        return pesoNaTerra * 0.38;
+class Venus extends PlanetaBase {
+    public Venus() {
+        super("Vênus", 0.91);
     }
 }
 
-class Jupiter implements Planeta {
-    public String getNome() {
-        return "Júpiter";
-    }
-    public double getPeso(double pesoNaTerra) {
-        return pesoNaTerra * 2.34;
+class Terra extends PlanetaBase {
+    public Terra() {
+        super("Terra", 1.0);
     }
 }
 
-class Saturno implements Planeta {
-    public String getNome() {
-        return "Saturno";
-    }
-    public double getPeso(double pesoNaTerra) {
-        return pesoNaTerra * 0.93;
+class Marte extends PlanetaBase {
+    public Marte() {
+        super("Marte", 0.38);
     }
 }
 
-class Urano implements Planeta {
-    public String getNome() {
-        return "Urano";
-    }
-    public double getPeso(double pesoNaTerra) {
-        return pesoNaTerra * 0.92;
+class Jupiter extends PlanetaBase {
+    public Jupiter() {
+        super("Júpiter", 2.34);
     }
 }
 
-class Netuno implements Planeta {
-    public String getNome() {
-        return "Netuno";
+class Saturno extends PlanetaBase {
+    public Saturno() {
+        super("Saturno", 0.93);
     }
-    public double getPeso(double pesoNaTerra) {
-        return pesoNaTerra * 1.12;
+}
+
+class Urano extends PlanetaBase {
+    public Urano() {
+        super("Urano", 0.92);
+    }
+}
+
+class Netuno extends PlanetaBase {
+    public Netuno() {
+        super("Netuno", 1.12);
     }
 }
 
@@ -85,13 +74,14 @@ public class CalculoPesoPlaneta {
         double pesoNaTerra = scanner.nextDouble();
 
         // define os dados dos planetas
-        Planeta[] planetas = {new Mercurio(), new Venus(), new Terra(), new Marte(), new Jupiter(), new Saturno(), new Urano(), new Netuno()};
+        PlanetaBase[] planetas = {new Mercurio(), new Venus(), new Terra(), new Marte(), new Jupiter(), new Saturno(), new Urano(), new Netuno()};
 
         // apresenta a lista de planetas disponíveis
         System.out.println("Escolha um planeta para viajar:");
         for (int i = 0; i < planetas.length; i++) {
             System.out.println(i + ". " + planetas[i].getNome());
         }
+
         // solicita a escolha do planeta
         System.out.print("Digite o número do planeta escolhido: ");
         int indexPlaneta = scanner.nextInt();
@@ -99,11 +89,13 @@ public class CalculoPesoPlaneta {
         if (indexPlaneta < 0 || indexPlaneta >= planetas.length) {
             System.out.println("Planeta inválido!");
         } else {
-            Planeta planetaEscolhido = planetas[indexPlaneta];
+            PlanetaBase planetaEscolhido = planetas[indexPlaneta];
             double pesoNoPlaneta = planetaEscolhido.getPeso(pesoNaTerra);
+
             // apresenta o resultado
             System.out.println("Seu peso em " + planetaEscolhido.getNome() + " é de " + pesoNoPlaneta + " kg.");
         }
+
         // fecha o scanner
         scanner.close();
     }
