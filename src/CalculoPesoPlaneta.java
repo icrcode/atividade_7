@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 abstract class PlanetaBase {
-    private String nome;
-    private double fatorGravidade;
+    private final String nome;
+    private final double fatorGravidade;
 
     public PlanetaBase(String nome, double fatorGravidade) {
         this.nome = nome;
