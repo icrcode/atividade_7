@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd3f321b-8fbf-411f-8c56-99c44f030e51" name="Changes" comment="2ª Tentativa com herança e polimorfismo">
+    <list default="true" id="cd3f321b-8fbf-411f-8c56-99c44f030e51" name="Changes" comment="3ª Tentativa com herança e polimorfismo">
+      <change afterPath="$PROJECT_DIR$/src/Jupiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Marte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mercurio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Netuno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PlanetaBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Saturno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Terra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Urano.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Venus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CalculoPesoPlaneta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalculoPesoPlaneta.java" afterDir="false" />
     </list>
@@ -10,6 +19,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -17,7 +33,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2MqFT1O6cnjhJyHa8is47GCE9R7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,7 +45,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "false",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module",
+      "directory"
+    ]
   }
 }]]></component>
   <component name="RunManager">
@@ -52,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678487209728</updated>
-      <workItem from="1678487211020" duration="4159000" />
+      <workItem from="1678487211020" duration="6013000" />
     </task>
     <task id="LOCAL-00001" summary="Tentativa com herança e polimorfismo">
       <created>1678490636590</created>
@@ -68,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678491126061</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="3ª Tentativa com herança e polimorfismo">
+      <created>1678491718349</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678491718349</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Tentativa com herança e polimorfismo" />
     <MESSAGE value="2ª Tentativa com herança e polimorfismo" />
-    <option name="LAST_COMMIT_MESSAGE" value="2ª Tentativa com herança e polimorfismo" />
+    <MESSAGE value="3ª Tentativa com herança e polimorfismo" />
+    <option name="LAST_COMMIT_MESSAGE" value="3ª Tentativa com herança e polimorfismo" />
   </component>
 </project>
